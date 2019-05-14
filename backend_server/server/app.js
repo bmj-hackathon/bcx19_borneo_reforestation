@@ -20,8 +20,9 @@ class TheServer {
      * Initilization of the routes
      */
 	initRoutes() {
-        // require("./routes/TestRoutes.js")(this.server); // For learning Hapi!
+        require("./routes/TestRoutes.js")(this.server); // For learning Hapi!
         require("./routes/StarRoutes.js")(this.server); // According to specifications
+        require("./routes/SengonRoutes.js")(this.server); // According to specifications
         // require("./BlockController.js")(this.server); // For project 3
 	}
     
