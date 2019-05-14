@@ -1,6 +1,6 @@
 // For learning HAPI!
 // Testing and demo endpoints start with `hello`
-controller = require('../controllers/TestController')
+controller = require('../controllers/SengonController')
 
 /**
  * Controller Definition 
@@ -23,7 +23,7 @@ class TestRoutes {
         // this.server.route({ method:'GET',   path:'/api/number/{index}', handler:controller.helloNumberIndex });
 
         this.server.route([
-            // { method: 'GET', path: '/api/hello', handler: controller.helloGet },
+            { method: 'GET', path: '/api/v1/trees', handler: controller.getTrees }
             // { method: 'POST', path: '/api/hello', handler: controller.helloPost },
             // { method: 'GET', path: '/api/greet/{user}', handler: controller.helloGreetUser },
             // { method: 'GET', path: '/api/number/{index}', handler: controller.helloNumberIndex },
